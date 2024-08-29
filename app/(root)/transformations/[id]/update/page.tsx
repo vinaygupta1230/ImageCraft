@@ -1,4 +1,4 @@
-import { useAuth } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
 import Header from "@/components/shared/Header";
@@ -9,7 +9,7 @@ import { getImageById } from "@/lib/actions/image.actions";
 import { use } from "react";
 
 const Page = async ({ params: { id } }: SearchParamProps) => {
-  const { userId } = useAuth();
+  const { userId } = auth();
 
   if (!userId) redirect("/sign-in");
 

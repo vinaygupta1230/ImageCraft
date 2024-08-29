@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.3.1",
+    "@clerk/nextjs": "^5.3.3",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-alert-dialog": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.1",
@@ -23,7 +23,7 @@
     "lucide-react": "^0.427.0",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.3",
-    "next": "14.2.5",
+    "next": "^14.2.6",
     "next-cloudinary": "^6.10.0",
     "qs": "^6.13.0",
     "react": "^18",

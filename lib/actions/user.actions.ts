@@ -22,7 +22,9 @@ export async function createUser(user: CreateUserParams) {
 // READ
 export async function getUserById(userId: string) {
   try {
+    console.log("yessss11")
     await connectToDatabase();
+    console.log("yessss22")
 
     const user = await User.findOne({ clerkId: userId });
 
